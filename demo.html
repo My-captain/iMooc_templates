@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字提示</title>
+    <style type="text/css">
+        #preview{
+            border:1px solid #cccccc;
+            background:#9900CC;
+            color:#fff;
+            padding:5px;
+            width: 400px;
+            height: 400px;
+            display:none;
+            position:absolute;
+        }
+    </style>
+    <script type="text/javascript" src="./static/js/public/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+<a class="preview">把鼠标放到这里1</a>
+<br/><br/><br/>
+<a class="preview">把鼠标放到这里2</a>
+<br/><br/><br/>
+<a class="preview">把鼠标放到这里3</a>
+<br/><br/><br/>
+<a class="preview">把鼠标放到这里4</a>
+<br/><br/><br/>
+<a class="preview">把鼠标放到这里5</a>
+
+<script type="text/javascript">
+    this.imagePreview = function(){
+        xOffset = 10;
+        yOffset = 30;
+        $("a.preview").hover(function(e){
+                $("body").append("<div id='preview'>我是小提示</div>");
+                $("#preview")
+                    .css("top",(e.pageY - xOffset) + "px")
+                    .css("left",(e.pageX + yOffset) + "px")
+                    .fadeIn("slow");
+            },
+            function(){
+                $("#preview").fadeOut("fast");
+            });
+        $("a.preview").mousemove(function(e){
+            $("#preview")
+                .css("top",(e.pageY - xOffset) + "px")
+                .css("left",(e.pageX + yOffset) + "px");
+        });
+    };
+    $(document).ready(function(){
+        imagePreview();
+    });
+</script>
+</body>
+</html>

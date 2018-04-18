@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/css/public.css">
+    <link rel="stylesheet" href="../../static/css/headerAndFooter.css">
+    <link rel="stylesheet" href="../../static/css/course/course-info.css">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <div id="header">
+        <div id="nav" style="background-color: #fff !important;">
+            <div id="logo" class="logo">
+                <img title="iMooc" src="../../static/images/public/logo.png" onclick="window.open('./index.html', 'self')">
+            </div>
+            <ul id="header-nav-items">
+                <li>
+                    <a href="/course/list" target="_self">免费课程</a>
+                </li>
+                <li>
+                    <a href="//class.imooc.com" target="_self">
+                        学习路径
+                    </a>
+                </li>
+            </ul>
+            <div id="search-input" style="min-width: 32px; height: 72px;">
+                <div id="search-input-container">
+                    <input id="search-area-input" type="text" autocomplete="off">
+                </div>
+            </div>
+            <div id="login-area">
+                <ul>
+                    <li>
+                        <a href="#" id="js-signin-btn">登录</a>
+                    </li>
+                    <li>
+                        <div id="login-signup-separator">/</div>
+                    </li>
+                    <li>
+                        <a href="#" id="js-signup-btn">注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="course-infos-container">
+    <div class="course-infos">
+        <div class="w pr">
+            <div class="path">
+                <a href="/course/list">课程</a>
+                <i class="path-split">\</i><a href="/course/list?c=ai">人工智能</a>
+            </div>
+            <div class="hd clearfix">
+                <h2>Python实现线性回归</h2>
+            </div>
+            <div class="statics clearfix">
+                <div class="teacher-info l">
+                    <a href="/u/307362/courses?sort=publish" target="_blank">
+                        <img data-userid="307362" class="js-usercard-dialog" src="//img1.mukewang.com/594868b80001fa7202000200-80-80.jpg" width="80" height="80">
+                    </a>
+                    <span class="tit">
+                    <a href="/u/307362/courses?sort=publish" target="_blank">Erik_Song</a><i class="icon-imooc"></i>
+                </span>
+                    <span class="job">全栈工程师</span>
+                </div>
+
+                <div class="static-item l">
+                    <span class="meta">难度</span><span class="meta-value">初级</span>
+                </div>
+                <div class="static-item l">
+                    <span class="meta">时长</span><span class="meta-value"> 1小时 5分</span>
+                </div>
+                <div class="static-item l">
+                    <span class="meta">学习人数</span><span class="meta-value js-learn-num">4951</span>
+                </div>
+            </div>
+            <div class="extra"></div>
+        </div>
+    </div>
+</div>
+<div id="nav-bar-container">
+    <div id="course-infos-nav-bar">
+        <ul>
+            <li>
+                <a class="active" href="#">课程章节</a>
+            </li>
+            <li>
+                <a href="#">问答评论</a>
+            </li>
+            <li>
+                <a href="#">用户评价</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="course-info-main clearfix w">
+
+    <div class="content-wrap clearfix">
+        <div class="content">
+            <!-- 课程简介 -->
+            <div class="course-description course-wrap">
+                简介：对于机器学习的入门学习者提供线性回归的原理讲解，
+                在掌握原理的基础上，利用python实现最小二乘法或者梯度
+                下降来进行线性回归分析。
+            </div>
+            <!-- 课程简介 end -->
+
+            <!-- 课程章节 -->
+            <div class="course-chapters">
+                <div class="chapter course-wrap ">
+                    <!-- 章节标题 -->
+                    <h3>
+                        1章 课程介绍
+                    </h3>
+                    <div class="chapter-description">
+                        圈定课程适合人群，介绍产生背景，前置知识，具体安排等。
+                    </div>
+                    <!-- 章节标题 end -->
+                    <!-- 章节小节 -->
+                    <ul class="video">
+                        <li data-media-id="16903">
+                            <a href="/video/16903" class="J-media-item">
+                                <i class="imv2-play_circle type"></i>
+                                1-1 课程背景
+                                (03:54)
+                                <button class="r moco-btn moco-btn-red preview-btn">开始学习</button>
+                            </a>
+                        </li>
+                        <li data-media-id="16893">
+                            <a href="/video/16893" class="J-media-item">
+                                <i class="imv2-play_circle type"></i>
+                                1-2 课程安排
+                                (03:19)
+
+                                <button class="r moco-btn moco-btn-red preview-btn">开始学习</button>
+
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 章节小节 end -->
+                </div>
+                <div class="chapter course-wrap ">
+                    <!-- 章节标题 -->
+                    <h3>
+                        2章 线性回归原理
+                    </h3>
+                    <div class="chapter-description">
+                        讲解线性回归概念及求解方法
+                    </div>
+                    <!-- 章节标题 end -->
+                    <!-- 章节小节 -->
+                    <ul class="video">
+                        <li data-media-id="16894">
+                            <a href="/video/16894" class="J-media-item">
+                                <i class="imv2-play_circle type"></i>
+                                2-1 什么是线性回归
+                                (02:14)
+
+                                <button class="r moco-btn moco-btn-red preview-btn">开始学习</button>
+
+                            </a>
+                        </li>
+                        <li data-media-id="16895">
+                            <a href="/video/16895" class="J-media-item">
+                                <i class="imv2-play_circle type"></i>
+                                2-2 线性回归的数学表示
+                                (04:07)
+
+                                <button class="r moco-btn moco-btn-red preview-btn">开始学习</button>
+
+                            </a>
+                        </li>
+                        <li data-media-id="16896">
+                            <a href="/video/16896" class="J-media-item">
+                                <i class="imv2-play_circle type"></i>
+                                2-3 最小二乘法
+                                (03:40)
+
+                                <button class="r moco-btn moco-btn-red preview-btn">开始学习</button>
+
+                            </a>
+                        </li>
+                        <li data-media-id="16902">
+                            <a href="/video/16902" class="J-media-item">
+                                <i class="imv2-play_circle type"></i>
+                                2-4 梯度下降
+                                (04:59)
+
+                                <button class="r moco-btn moco-btn-red preview-btn">开始学习</button>
+
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 章节小节 end -->
+                </div>
+            </div>
+            <!-- 课程章节 end -->
+        </div><!--content end-->
+        <div class="aside r">
+            <div class="course-wrap course-aside-info js-usercard-box">
+                <div class="learn-btn">
+                    <a href="/video/16903" class="start-learun-btn">开始学习</a>
+                </div>
+                <div class="course-info-tip">
+                    <dl class="first">
+                        <dt>课程须知</dt>
+                        <dd class="autowrap">1、有机器学习基础
+                            2、有一定的python基础</dd>
+                    </dl>
+                    <dl>
+                        <dt>老师告诉你能学到什么？</dt>
+                        <dd class="autowrap">1、线性回归的概念
+                            2、最小二乘法的python实现
+                            3、梯度下降的python实际
+                            4、编程处理线性回归分析的一般方法</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="js-commend-box">
+                <div class="mb40 recom-course-list-box">
+                    <h4>推荐课程</h4>
+                    <ul class="js-recom-course recom-course-list clearfix">
+                        <li class="clearfix"><a href="//coding.imooc.com/class/191.html" class="clearfix" target="_blank">
+                            <div class="l course-img" style="background-image: url(//img4.mukewang.com/szimg/5a9f4c2e00010ce205400300-360-202.jpg);"></div>
+                            <div class="l content-box">
+                                <p class="smalle-title">OpenCV+TensorFlow 入门人工智能图像处理</p>
+                                <div class="clearfix learn-detail">
+                                    实战
+                                    <span>&middot;</span>中级
+                                    <span>&middot;</span>
+                                    <i class="imv2-set-sns"></i>142
+                                </div>
+                            </div></a></li>
+                        <li class="clearfix"><a href="//coding.imooc.com/class/103.html" class="clearfix" target="_blank">
+                            <div class="l course-img" style="background-image: url(//img3.mukewang.com/szimg/59e563cb00010b7105400300-360-202.jpg);"></div>
+                            <div class="l content-box">
+                                <p class="smalle-title">机器学习入门 Scikit-learn实现经典小案例</p>
+                                <div class="clearfix learn-detail">
+                                    实战
+                                    <span>&middot;</span>初级
+                                    <span>&middot;</span>
+                                    <i class="imv2-set-sns"></i>718
+                                </div>
+                            </div></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="js-related-box">
+                <div class="mb40 recom-course-list-box">
+                    <h4>相关课程</h4>
+                    <ul class="js-recom-course recom-course-list clearfix">
+                        <li class="clearfix"><a href="//www.imooc.com/learn/864" class="clearfix" target="_blank">
+                            <div class="l course-img" style="background-image: url(//img4.mukewang.com/598287cd00014dc606000338-240-135.jpg);"></div>
+                            <div class="l content-box">
+                                <p class="smalle-title">Python 全栈案例初体验</p>
+                                <div class="clearfix learn-detail">
+                                    初级
+                                    <span>&middot;</span>
+                                    <i class="imv2-set-sns"></i>35386
+                                </div>
+                            </div></a></li>
+                        <li class="clearfix"><a href="//www.imooc.com/learn/943" class="clearfix" target="_blank">
+                            <div class="l course-img" style="background-image: url(//img2.mukewang.com/5a7048580001670506000338-240-135.jpg);"></div>
+                            <div class="l content-box">
+                                <p class="smalle-title">Python人工智能常用库Numpy使用入门</p>
+                                <div class="clearfix learn-detail">
+                                    初级
+                                    <span>&middot;</span>
+                                    <i class="imv2-set-sns"></i>13395
+                                </div>
+                            </div></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-wrap idx-width">
+            <div class="footer-sns clearfix">
+                <div class="l">
+                    <a href="javascript:void(0);" class="footer-sns-weixin" target="_blank" title="微信">
+                        <i class="footer-sns-weixin-expand"></i>
+                    </a>
+                    <p>官方公众号</p>
+                </div>
+                <div class="l">
+                    <a href="http://weibo.com/u/3306361973" class="footer-sns-weibo hide-text" target="_blank" title="新浪微博">
+                    </a>
+                    <p>官方微博</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-link">
+            <!-- <a href="/about/us" target="_blank" title="关于我们">关于我们</a> -->
+            <a href="/about/cooperate" target="_blank" title="企业合作">企业合作</a>
+            <a href="/about/job" target="_blank" title="人才招聘">人才招聘</a>
+            <a href="/about/contact" target="_blank" title="联系我们">联系我们</a>
+            <a href="/about/recruit" target="_blank" title="讲师招募">讲师招募</a>
+            <a href="/about/faq" target="_blank" title="常见问题">常见问题</a>
+            <a href="/user/feedback" target="_blank" title="意见反馈">意见反馈</a>
+            <a href="http://daxue.imooc.com/" target="_blank">慕课大学</a>
+            <a href="/about/friendly" target="_blank" title="友情链接">友情链接</a>
+        </div>
+        <div class="footer-copyright">
+            <p>©&nbsp;2018&nbsp;中源团队&nbsp;&nbsp;南京中医药大学 信息技术学院</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
